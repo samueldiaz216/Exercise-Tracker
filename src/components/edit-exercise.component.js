@@ -47,8 +47,8 @@ export default class EditExercise extends Component {
                 .then(res => {//Returns specific exercise with id
                     this.setState({
                         username: res.data.username,
-                        description: res.data.username,
-                        duration: res.data.username,
+                        description: res.data.description,
+                        duration: res.data.duration,
                         date: new Date(res.data.date)
                     })
                 })

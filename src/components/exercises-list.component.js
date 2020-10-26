@@ -31,7 +31,7 @@ export default class ExerciseList extends Component {
     componentDidMount(){
         axios.get("http://localhost:3000/exercises/")//Route to get all exercises
             .then(res => {
-                this.setState({exercises: res.data})//assigns array of ecercises in db to state with all fields
+                this.setState({exercises: res.data})//assigns array of exercises in db to state with all fields
             })
             .catch((err)=> {
                 console.log(err);
